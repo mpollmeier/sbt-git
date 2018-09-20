@@ -18,3 +18,5 @@ libraryDependencies ++= Seq(
 )
 
 scriptedLaunchOpts += s"-Dproject.version=${version.value}"
+
+publishTo := Some("releases" at "https://shiftleft.jfrog.io/shiftleft/libs-release-local")
