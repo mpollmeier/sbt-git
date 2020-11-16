@@ -1,4 +1,4 @@
-organization := "com.typesafe.sbt"
+organization := "com.michaelpollmeier"
 name := "sbt-git"
 licenses := Seq(("BSD-2-Clause", url("https://opensource.org/licenses/BSD-2-Clause")))
 description := "An sbt plugin that offers git features directly inside sbt"
@@ -19,4 +19,4 @@ libraryDependencies ++= Seq(
 
 scriptedLaunchOpts += s"-Dproject.version=${version.value}"
 
-publishTo := Some("releases" at "https://shiftleft.jfrog.io/shiftleft/libs-release-local")
+publishTo := sonatypePublishToBundle.value
